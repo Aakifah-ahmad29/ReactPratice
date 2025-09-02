@@ -3,6 +3,7 @@ const PropsPract = (props) => {
     <div>
       <h1>Hi from Props Components</h1>
       <h2>Name : {props.name}</h2>
+      <p> Reminder: {props.message}</p>
     </div>
   );
 };

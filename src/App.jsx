@@ -12,10 +12,10 @@ function App() {
     <>
       <div>
         <Header />
-        <PropsPract name="Aakifah " />
-        <PropsPract name="Jahangir " />
-        <PropsPract name="Ahmad " />
-        <PropsPract name="Najma " />
+        <PropsPract name="Aakifah " message="Complete task" />
+        <PropsPract name="Jahangir " message="Complete task-2" />
+        <PropsPract name="Ahmad " message="Complete task-5" />
+        <PropsPract name="Najma " message="Complete task-4" />
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
