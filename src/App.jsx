@@ -4,18 +4,28 @@ import viteLogo from "/vite.svg";
 import Header from "./components/Header";
 import "./App.css";
 import PropsPract from "./components/PropsPract";
+import Fruits from "./Fruits";
 
 function App() {
   const [count, setCount] = useState(0);
-
+  const person = {
+    name: "aakifah",
+    message: "complete new task",
+    emoji: "✔",
+  };
   return (
     <>
       <div>
         <Header />
-        <PropsPract name="Aakifah " message="Complete task" />
+        {/* <PropsPract name="Aakifah " message="Complete task" emoji="😂" />
         <PropsPract name="Jahangir " message="Complete task-2" />
         <PropsPract name="Ahmad " message="Complete task-5" />
-        <PropsPract name="Najma " message="Complete task-4" />
+        <PropsPract name="Najma " message="Complete task-4" /> */}
+
+        <PropsPract person={person} />
+
+        <Fruits />
+
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

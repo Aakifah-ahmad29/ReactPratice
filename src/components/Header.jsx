@@ -1,3 +1,5 @@
+import "./Header.component.css";
+
 const name = "Aakifah Naz";
 function displaymessage() {
   return "hello from function";
