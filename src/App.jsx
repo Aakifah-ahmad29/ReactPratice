@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import "./App.css";
 import PropsPract from "./components/PropsPract";
 import Fruits from "./Fruits";
+import Message from "./components/Message";
+import Counter from "./components/Counter";
+import Form from "./components/Form";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +19,9 @@ function App() {
   return (
     <>
       <div>
+        <Form />
+        <Counter />
+
         <Header />
         {/* <PropsPract name="Aakifah " message="Complete task" emoji="😂" />
         <PropsPract name="Jahangir " message="Complete task-2" />
@@ -26,6 +32,7 @@ function App() {
 
         <Fruits />
 
+        <Message />
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

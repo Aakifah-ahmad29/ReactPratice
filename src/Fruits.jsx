@@ -1,9 +1,11 @@
+import Product from "./components/Product";
+
 const fruits = [
-  { name: "Apple", price: 1.2, emoji: "🍎" },
-  { name: "Orange", price: 1.0, emoji: "🍊" },
-  { name: "Banana", price: 0.5, emoji: "🍌" },
-  { name: "Pineapple", price: 2.0, emoji: "🍍" },
-  { name: "Mango", price: 1.5, emoji: "🥭" },
+  { name: "Apple", price: 10, emoji: "🍎", soldout: false },
+  { name: "Orange", price: 15, emoji: "🍊", soldout: false },
+  { name: "Banana", price: 5, emoji: "🍌", soldout: true },
+  { name: "Pineapple", price: 4, emoji: "🍍", soldout: false },
+  { name: "Mango", price: 11, emoji: "🥭", soldout: false },
 ];
 console.log(fruits);
 const Fruits = () => {
@@ -11,10 +13,20 @@ const Fruits = () => {
     <div>
       {/* <h1>{fruits.map((fruit) => (Key = { fruit } > { fruit }))}</h1>{" "} */}
 
-      {fruits.map((fruit) => (
+      {/* {fruits.map((fruit) => (
         <h2 key={fruit.name}>
-          {fruit.emoji} Name:{fruit.name} Price:{fruit.price}
+          {fruit.emoji} Name: {fruit.name} Price:{fruit.price}
         </h2>
+      ))} */}
+
+      {fruits.map((fruit) => (
+        <Product
+          key={fruit.name}
+          name={fruit.name}
+          price={fruit.price}
+          emoji={fruit.emoji}
+          soldOut={fruit.soldout}
+        />
       ))}
     </div>
   );
